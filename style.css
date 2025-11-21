@@ -797,9 +797,174 @@ section {
     position: relative;
 }
 
+/* ==========================================
+   RESPONSIVE DESIGN
+   ========================================== */
+
+/* Tablet and smaller desktop (max-width: 1024px) */
+@media (max-width: 1024px) {
+    :root {
+        --font-size-6xl: 3.5rem;
+        --font-size-5xl: 2.5rem;
+        --spacing-3xl: 4rem;
+    }
+
+    .glass-nav-cylinder {
+        min-width: 80%;
+        padding: var(--spacing-sm) var(--spacing-lg);
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: var(--spacing-xl);
+    }
+
+    .hero-text {
+        order: 2;
+    }
+
+    .hero-3d {
+        height: 400px;
+        order: 1;
+    }
+
+    .about-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    :root {
+        --font-size-6xl: 2.5rem;
+        --font-size-5xl: 2rem;
+        --font-size-4xl: 1.75rem;
+        --spacing-3xl: 3rem;
+        --spacing-2xl: 2rem;
+        --spacing-xl: 1.5rem;
+    }
+
+    /* Mobile Navigation */
+    .glass-nav-cylinder {
+        top: auto;
+        bottom: var(--spacing-md);
+        width: 90%;
+        min-width: auto;
+        padding: var(--spacing-sm) var(--spacing-md);
+        background: rgba(10, 10, 10, 0.9);
+        /* Darker for better contrast */
+    }
+
+    .nav-links {
+        display: none;
+        /* Hide links on mobile for now (or implement hamburger) */
+        /* For a simple fix, we can show just icons or a simplified menu */
+    }
+
+    /* Alternative: Show simplified bottom nav */
+    .nav-container {
+        justify-content: center;
+    }
+
+    .logo-text {
+        display: inline-block;
+    }
+
+    /* Hero Section */
+    .hero-3d-fullscreen {
+        height: 100vh;
+    }
+
+    .chaos-message {
+        font-size: 2rem;
+        padding: 0 var(--spacing-md);
+    }
+
+    /* Intro Section */
+    .hero-stats {
+        flex-wrap: wrap;
+        gap: var(--spacing-lg);
+        justify-content: center;
+    }
+
+    .stat {
+        text-align: center;
+        flex: 1 1 40%;
+    }
+
+    /* Grids -> Single Column */
+    .about-grid,
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+
+    /* Adjust 3D Spacer */
+    #scroll-spacer {
+        height: 600vh;
+        /* Slightly shorter scroll on mobile */
+    }
+
+    /* Hide complex timeline on very small screens if needed, or stack it */
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 0;
+    }
+
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+
+    .timeline-item:nth-child(even)::after {
+        left: 16px;
+    }
+
+    .timeline-item::after {
+        left: 16px;
+    }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .glass-nav-cylinder {
+        width: 95%;
+        bottom: var(--spacing-sm);
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
 .container {
     max-width: 1400px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .section-header {
@@ -1329,17 +1494,43 @@ section {
 /* ==========================================
    RESPONSIVE DESIGN
    ========================================== */
+
+/* Tablet and smaller desktop (max-width: 1024px) */
 @media (max-width: 1024px) {
+    :root {
+        --font-size-6xl: 3.5rem;
+        --font-size-5xl: 2.5rem;
+        --spacing-3xl: 4rem;
+    }
+
+    .glass-nav-cylinder {
+        min-width: 80%;
+        padding: var(--spacing-sm) var(--spacing-lg);
+    }
+
     .hero-content {
         grid-template-columns: 1fr;
-        gap: var(--spacing-2xl);
+        text-align: center;
+        gap: var(--spacing-xl);
+    }
+
+    .hero-text {
+        order: 2;
     }
 
     .hero-3d {
         height: 400px;
+        order: 1;
     }
 
-    .about-grid,
+    .about-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1349,27 +1540,67 @@ section {
     }
 }
 
+/* Mobile (max-width: 768px) */
 @media (max-width: 768px) {
+    :root {
+        --font-size-6xl: 2.5rem;
+        --font-size-5xl: 2rem;
+        --font-size-4xl: 1.75rem;
+        --spacing-3xl: 3rem;
+        --spacing-2xl: 2rem;
+        --spacing-xl: 1.5rem;
+    }
+
+    /* Mobile Navigation */
+    .glass-nav-cylinder {
+        top: auto;
+        bottom: var(--spacing-md);
+        /* Move nav to bottom on mobile for easier reach */
+        width: 90%;
+        min-width: auto;
+        padding: var(--spacing-sm) var(--spacing-md);
+        background: rgba(10, 10, 10, 0.95);
+        border-color: var(--color-primary);
+    }
+
     .nav-links {
         display: none;
+        /* Hide links on mobile */
     }
 
-    .hero-title {
-        font-size: var(--font-size-4xl);
+    .nav-container {
+        justify-content: center;
     }
 
-    .section-title {
-        font-size: var(--font-size-3xl);
+    .logo-text {
+        display: inline-block;
     }
 
-    .about-grid,
-    .skills-grid,
-    .projects-grid {
-        grid-template-columns: 1fr;
+    /* Hero Section */
+    .hero-3d-fullscreen {
+        height: 100vh;
+    }
+
+    .chaos-message {
+        font-size: 2rem;
+        padding: 0 var(--spacing-md);
+    }
+
+    /* Intro Section */
+    .hero-stats {
+        flex-wrap: wrap;
+        gap: var(--spacing-lg);
+        justify-content: center;
+    }
+
+    .stat {
+        text-align: center;
+        flex: 1 1 40%;
     }
 
     .hero-cta {
         flex-direction: column;
+        width: 100%;
     }
 
     .btn {
@@ -1377,10 +1608,19 @@ section {
         justify-content: center;
     }
 
-    .hero-stats {
-        flex-wrap: wrap;
+    /* Grids -> Single Column */
+    .about-grid,
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
     }
 
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer */
     .footer-content {
         grid-template-columns: 1fr;
         text-align: center;
@@ -1392,6 +1632,41 @@ section {
 
     .footer-social {
         justify-content: center;
+    }
+
+    /* Adjust 3D Spacer */
+    #scroll-spacer {
+        height: 600vh;
+        /* Slightly shorter scroll on mobile */
+    }
+
+    /* Timeline adjustments */
+    .timeline {
+        padding-left: var(--spacing-lg);
+    }
+
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-dot {
+        left: calc(-1 * var(--spacing-lg) - 6px);
+    }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .glass-nav-cylinder {
+        width: 95%;
+        bottom: var(--spacing-sm);
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
     }
 }
 
