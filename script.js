@@ -171,10 +171,8 @@ function animate() {
         // We use a small buffer (0.99) to ensure it fades out smoothly at the end
         if (scrollY > maxScroll - 100) {
             container.style.opacity = '0';
-            container.style.pointerEvents = 'none';
         } else {
             container.style.opacity = '1';
-            container.style.pointerEvents = 'auto';
         }
 
         // Update Chaos Messages based on progress

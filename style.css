@@ -213,11 +213,15 @@ body {
     /* Allow clicks to pass through if needed, but we have controls */
 }
 
-#hero-3d .canvas-container,
+#hero-3d .canvas-container {
+    pointer-events: none;
+    /* CRITICAL FIX: Prevent canvas from blocking scroll */
+}
+
 #hero-3d .chaos-message-container,
 #hero-3d .scroll-indicator-3d {
-    pointer-events: auto;
-    /* Re-enable pointer events for interactive elements */
+    pointer-events: none;
+    /* Text doesn't need interaction */
 }
 
 #scroll-spacer {
