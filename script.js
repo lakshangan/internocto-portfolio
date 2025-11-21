@@ -113,13 +113,13 @@ function init3DScene() {
             const size = box.getSize(new THREE.Vector3());
 
             const maxDim = Math.max(size.x, size.y, size.z);
-            const scale = 4.5 / maxDim;
+            const scale = 3.5 / maxDim; // Reduced scale for better fit
 
             octopusModel.scale.set(scale, scale, scale);
             octopusModel.position.sub(center.multiplyScalar(scale));
 
-            // Move down to avoid navbar overlap (Centering in hero)
-            octopusModel.position.y -= 4.0;
+            // Move down slightly for better visual centering
+            octopusModel.position.y = -0.8;
 
             // Initial rotation setup (matches the "4 +" from your request)
             octopusModel.rotation.y = 4;
@@ -206,8 +206,10 @@ function animate() {
         // Apply float wobble to Z
         octopusModel.rotation.z += (floatRotZ - octopusModel.rotation.z) * damping;
 
-        // Apply float position
-        octopusModel.position.y += (floatY - octopusModel.position.y) * damping;
+        // Apply float position (centered at -0.8)
+        const baseY = -0.8;
+        const targetY = baseY + floatY;
+        octopusModel.position.y += (targetY - octopusModel.position.y) * damping;
     }
 
     if (renderer && scene && camera) {
