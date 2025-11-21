@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InternocTO - Professional Chaos Portfolio | Openledger's Intern Mascot</title>
+    <meta name="description"
+        content="Meet InternocTO, the astronaut octopus intern at Openledger. Eight arms, zero experience, infinite chaos. Welcome to the most professionally chaotic portfolio in the galaxy.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Space+Grotesk:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="glass-nav-cylinder" id="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🐙</span>
+                <span class="logo-text">InternocTO</span>
+            </div>
+            <div class="nav-links">
+                <a href="#hero-3d" class="nav-link active">The Mascot</a>
+                <a href="#intro" class="nav-link">Profile</a>
+                <a href="#about" class="nav-link">Chaos Resume</a>
+                <a href="#skills" class="nav-link">Skills(?)</a>
+                <a href="#projects" class="nav-link">Disasters</a>
+                <a href="#contact" class="nav-link">Hire Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Fixed 3D Hero Section -->
+    <section class="hero-3d-fullscreen" id="hero-3d">
+        <div class="canvas-container">
+            <canvas id="canvas3d-fullscreen"></canvas>
+        </div>
+
+        <div class="chaos-message-container">
+            <h2 class="chaos-message" id="chaos-text">Loading Chaos...</h2>
+        </div>
+
+        <div class="scroll-indicator-3d">
+            <p>Scroll to Rotate the Intern</p>
+            <div class="arrow-down"></div>
+        </div>
+    </section>
+
+    <!-- Scroll Spacer (Invisible track for animation) -->
+    <div id="scroll-spacer"></div>
+
+    <!-- Content Starts Here -->
+    <div class="main-content">
+        <!-- Original Hero Section (Now Intro) -->
+        <section class="hero" id="intro">
+
+    </div>
+
+    <div class="hero-content centered-hero">
+        <div class="hero-text text-center">
+            <div class="badge">
+                <span class="badge-dot"></span>
+                Available for Chaos
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Professional</span>
+                <span class="title-line gradient-text">Chaos</span>
+                <span class="title-line">Engineer</span>
+            </h1>
+            <p class="hero-subtitle">
+                Eight arms. Zero experience. Infinite possibilities for disaster.
+                <br>
+                <span class="subtitle-accent">Welcome to InternocTO's portfolio.</span>
+            </p>
+            <div class="hero-cta justify-center">
+                <button class="btn btn-primary" id="hire-btn">
+                    <span>Hire This Octopus</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn btn-secondary" id="scroll-btn">
+                    <span>Witness the Chaos</span>
+                </button>
+            </div>
+            <div class="hero-stats justify-center">
+                <div class="stat">
+                    <div class="stat-number">8</div>
+                    <div class="stat-label">Arms</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Days Without Incident</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label">Coffee Consumed</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Origin Story</span>
+                <h2 class="section-title">The Chaos Resume</h2>
+                <p class="section-subtitle">How an octopus ended up in space... and then in an internship</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card card-1">
+                    <div class="card-icon">🚀</div>
+                    <h3>The Journey</h3>
+                    <p>Found floating in space with a coffee cup and a laptop. NASA called it "unprecedented."
+                        We call
+                        it "Tuesday."</p>
+                </div>
+                <div class="about-card card-2">
+                    <div class="card-icon">💼</div>
+                    <h3>The Internship</h3>
+                    <p>Openledger took a chance on an octopus. They said "what's the worst that could happen?"
+                        They
+                        found out.</p>
+                </div>
+                <div class="about-card card-3">
+                    <div class="card-icon">🎯</div>
+                    <h3>The Mission</h3>
+                    <p>To boldly intern where no cephalopod has interned before. Results may vary. Chaos
+                        guaranteed.</p>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Week 1</h4>
+                        <p>Learned what a keyboard is. Accidentally deployed to production. Twice.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Week 2</h4>
+                        <p>Discovered coffee. Productivity increased 800%. So did the incident reports.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Week 3</h4>
+                        <p>Mastered multitasking with eight arms. Created eight different bugs simultaneously.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Current</h4>
+                        <p>Still here somehow. Management is confused. So am I. Let's call it success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Questionable Abilities</span>
+                <h2 class="section-title">Skills (?)</h2>
+                <p class="section-subtitle">Eight arms of semi-competence</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <span class="skill-icon">⌨️</span>
+                        <h3>Typing</h3>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 85%" data-width="85"></div>
+                    </div>
+                    <p class="skill-desc">800 WPM with 8 arms. 799 typos per minute.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <span class="skill-icon">☕</span>
+                        <h3>Coffee Consumption</h3>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 100%" data-width="100"></div>
+                    </div>
+                    <p class="skill-desc">Professional level. Possibly concerning.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <span class="skill-icon">🐛</span>
+                        <h3>Bug Creation</h3>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 95%" data-width="95"></div>
+                    </div>
+                    <p class="skill-desc">Expert level. Unintentionally.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <span class="skill-icon">🔧</span>
+                        <h3>Bug Fixing</h3>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 30%" data-width="30"></div>
+                    </div>
+                    <p class="skill-desc">Working on it. Slowly. Very slowly.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <span class="skill-icon">🎨</span>
+                        <h3>Design Sense</h3>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 70%" data-width="70"></div>
+                    </div>
+                    <p class="skill-desc">Everything is better in orange. Fight me.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <span class="skill-icon">🤹</span>
+                        <h3>Multitasking</h3>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 88%" data-width="88"></div>
+                    </div>
+                    <p class="skill-desc">Eight tasks at once. Eight failures simultaneously.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Hall of Chaos</span>
+                <h2 class="section-title">Notable Disasters</h2>
+                <p class="section-subtitle">A curated collection of professional mishaps</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-status status-disaster">DISASTER</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>The Great Database Incident</h3>
+                        <p>Accidentally dropped the production database. Then restored it. Then dropped it
+                            again. Third
+                            time's the charm?</p>
+                        <div class="project-tags">
+                            <span class="tag">SQL</span>
+                            <span class="tag">Panic</span>
+                            <span class="tag">Regret</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-status status-success">SUCCESS(?)</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Coffee Machine API</h3>
+                        <p>Built an API to order coffee. It works! Sometimes. When Mercury isn't in retrograde.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">REST</span>
+                            <span class="tag">Caffeine</span>
+                            <span class="tag">Hope</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-status status-ongoing">ONGOING</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>This Website</h3>
+                        <p>You're looking at it. Built with eight arms and zero supervision. If something
+                            breaks, it's a
+                            feature.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">Chaos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-text">
+                    <span class="section-tag">Let's Create Chaos Together</span>
+                    <h2 class="section-title">Hire This Octopus</h2>
+                    <p class="contact-description">
+                        Looking for someone who can juggle multiple tasks at once?
+                        I have eight arms and questionable decision-making skills.
+                        What could possibly go wrong?
+                    </p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span>internocto@openledger.chaos</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">🌊</span>
+                            <span>Deep Space, Sector 8</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">⏰</span>
+                            <span>Available 24/8 (get it?)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Why hire an octopus?</label>
+                            <textarea id="message" name="message" rows="4"
+                                placeholder="Tell me about your project... or just say hi!" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Send Message</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M18 2L9 11M18 2L12 18L9 11M18 2L2 8L9 11" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">🐙</span>
+                        <span class="logo-text">InternocTO</span>
+                    </div>
+                    <p>Professional Chaos Engineer at Openledger</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#hero">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+                    <a href="#" class="social-link" aria-label="GitHub">GH</a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 InternocTO. All chaos reserved. No databases were harmed in the making of this
+                    website.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+        }
+    }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
